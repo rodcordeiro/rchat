@@ -1,3 +1,4 @@
+import { ProviderProps } from 'react';
 import styled from 'styled-components';
 //background-image: url('${props=>props.picture}');
 const RoomIcon = styled.div`
@@ -9,6 +10,11 @@ const RoomIcon = styled.div`
     width: 50px;
 `;
 
+const Room = (props: any)=>(
+    <>
+        {props.text}
+    </>
+)
 export {
-    RoomIcon
+    Room
 }

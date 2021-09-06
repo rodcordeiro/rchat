@@ -13,9 +13,6 @@ labeler:
         - enhancement
 assigner:
   pull-requests:
-    project:
-      url: https://github.com/users/rodcordeiro/projects/4
-      column: To do
     assignee:
       auto: true
     actions:

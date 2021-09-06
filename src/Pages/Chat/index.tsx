@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-import { RoomIcon } from '../../Components/Rooms/RoomIcon'
+import { Room } from '../../Components/Rooms/RoomIcon'
 
 import Header from '../../Components/header';
 
@@ -36,7 +36,7 @@ function Chat() {
         {
           rooms.map(room=>(
               <div key={room.id}>
-                <RoomIcon />
+                <Room text={room.name} />
                 <h3>{room.name}</h3>
               </div>
             )
