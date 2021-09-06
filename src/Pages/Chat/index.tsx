@@ -36,7 +36,7 @@ function Chat() {
         {
           rooms.map(room=>(
               <div key={room.id}>
-                <RoomIcon picture={room.picture}/>
+                <RoomIcon />
                 <h3>{room.name}</h3>
               </div>
             )
