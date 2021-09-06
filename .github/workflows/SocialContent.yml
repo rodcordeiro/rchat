@@ -27,17 +27,7 @@ jobs:
     name: Create code gists for example
     runs-on: ubuntu-latest
     steps:
-      on: [push]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-       - name: Validate environment
-         run: ls
-      # - name: Prepare environment
-      #   uses: actions/checkout@v2
-      # - name: Run resk tool
-      #   run: npx resk rodcordeiro\rchat
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run resk tool
+        run: npx resk rodcordeiro\rchat
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
