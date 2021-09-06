@@ -46,7 +46,8 @@
   "devDependencies": {
     "@types/react-router-dom": "5.1.8",
     "@types/styled-components": "5.1.14",
-    "auto-changelog": "2.3.0"
+    "auto-changelog": "2.3.0",
+    "resk": "^1.2.4"
   },
   "auto-changelog": {
     "output": "CHANGELOG.md",

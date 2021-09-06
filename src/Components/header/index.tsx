@@ -1,8 +1,9 @@
 import React from 'react';
 import './index.css';
 export default function Header(props: any) {
-  
+  // resk start "HeaderComponent"
   return (
+    
     <header className="header">
         <img 
             src={props.picture}
@@ -20,6 +21,7 @@ export default function Header(props: any) {
         </p>
       </header>
   );
+  // resk end "HeaderComponent"
 }
 
 
