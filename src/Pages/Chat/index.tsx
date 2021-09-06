@@ -14,15 +14,23 @@ function Chat() {
     },{
       id: 1,
       name: "DEV",
-      picture:"https://rodcordeiro.github.io/shares/img/baracktocat.jpg"
+      picture:"https://rodcordeiro.github.io/shares/img/codigo3.jpeg"
     },{
       id: 2,
       name: "Rod",
-      picture:"https://rodcordeiro.github.io/shares/img/baracktocat.jpg"
+      picture:"https://rodcordeiro.github.io/shares/img/animeLandscape.jpg"
     },{
       id: 3,
-      name: "Teste",
+      name: "Uma Room com o nome muito grande",
+      picture:"https://rodcordeiro.github.io/shares/img/GrimReaper.png"
+    },{
+      id: 4,
+      name: "Headquarter",
       picture:"https://rodcordeiro.github.io/shares/img/baracktocat.jpg"
+    },{
+      id: 5,
+      name: "Chat",
+      picture:"https://rodcordeiro.github.io/shares/img/josh-redd-u_RiRTA_TtY-unsplash.jpg"
     },
   ]
 
@@ -35,12 +43,11 @@ function Chat() {
       <aside id="rooms">
         {
           rooms.map(room=>(
-              <div key={room.id}>
                 <Room 
-                picture={room.picture}
-                name={room.name} 
-                />
-              </div>
+                  key={room.id}
+                  picture={room.picture}
+                  name={room.name} 
+                />              
             )
           )
         }

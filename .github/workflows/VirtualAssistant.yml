@@ -4,6 +4,7 @@ on: [issues, pull_request]
 
 jobs:
   Assistant:
+    if: ${{ github.actor }} != "renovate[bot]"
     runs-on: ubuntu-latest
     steps:
       - name: Issue and Pull Request virtual assistant

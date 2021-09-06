@@ -28,6 +28,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run resk tool
-        run: npx resk rodcordeiro\rchat
+        run: npx resk rodcordeiro/rchat
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
