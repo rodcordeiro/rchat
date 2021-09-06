@@ -36,8 +36,10 @@ function Chat() {
         {
           rooms.map(room=>(
               <div key={room.id}>
-                <Room text={room.name} />
-                <h3>{room.name}</h3>
+                <Room 
+                picture={room.picture}
+                name={room.name} 
+                />
               </div>
             )
           )

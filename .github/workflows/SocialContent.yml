@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Open Graph social cards
-        uses: Jasmin2895/open-graph-image@v1.2
+        uses: rodcordeiro/open-graph-image@v1.2
         with:
           bold-text: "RChat"
           plain-text: "A Live chat with ReactJS, Typescript and Socket.IO"
@@ -27,13 +27,7 @@ jobs:
     name: Create code gists for example
     runs-on: ubuntu-latest
     steps:
-      on: [push]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: npx resk rodcordeiro\rchat
+      - name: Run resk tool
+        run: npx resk rodcordeiro\rchat
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
