@@ -15,9 +15,10 @@ const RoomBadge = styled.div`
 `,
  RoomIcon = styled.div`
     background-image: url('${(props: iRoom)=>props.picture}');
-    background-repeat: norepeat;
-    background-size: contain;
-    background-clip: borderbox;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     height: 50px;
     width: 50px;
     border-radius:50px;
