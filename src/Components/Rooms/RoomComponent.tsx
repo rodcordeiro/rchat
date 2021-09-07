@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 //background-image: url('${props=>props.picture}');
-interface iIcon{
-    picture: string
+interface iRoom{
+    id ?: string;
+    name ?: string;
+    picture: string;
 }
 const RoomBadge = styled.div`
     display: flex;
@@ -12,7 +14,7 @@ const RoomBadge = styled.div`
     border-bottom: 1px solid #18181833;
 `,
  RoomIcon = styled.div`
-    background-image: url('${(props: iIcon)=>props.picture}');
+    background-image: url('${(props: iRoom)=>props.picture}');
     background-repeat: norepeat;
     background-size: contain;
     background-clip: borderbox;
@@ -37,4 +39,7 @@ const Room = (props: any)=>(
 )
 export {
     Room
+}
+export type {
+    iRoom
 }

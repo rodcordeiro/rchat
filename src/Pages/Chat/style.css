@@ -3,7 +3,7 @@
     grid-template-areas: "header header header"
     "rooms messages users"
     "rooms msgInput users";
-    grid-template-columns: 250px auto 100px;
+    grid-template-columns: 250px auto 80px;
     grid-template-rows: 70px calc(100vh - 160px) 90px;
     height:100%;
     width: 100%;
@@ -17,9 +17,29 @@
 }
 .chat #messages{
     grid-area: messages;
-    background-color: yellow;
+    background-color: var(--msgs-container-bg);
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .chat #users{
     grid-area: users;
     background-color: red;
+}
+
+@media  screen and (max-width: 768px) {
+    .chat{
+        grid-template-areas: "header header"
+        "rooms messages"
+        "rooms msgInput";
+        grid-template-columns: 150px auto;
+        grid-template-rows: 70px calc(100vh - 200px);
+        height:100%;
+        width: 100%;
+    }
+    .chat #users{
+        display: none;
+    }
 }
