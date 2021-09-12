@@ -11,7 +11,7 @@ const RoomBadge = styled.div`
     justify-content: flex-start;
     align-items: center;
     padding: 15px 10px;
-    border-bottom: 1px solid #18181833;
+    border-bottom: 1px solid var(--rooms-separator);
 `,
  RoomIcon = styled.div`
     background-image: url('${(props: iRoom)=>props.picture}');
@@ -27,7 +27,6 @@ const RoomBadge = styled.div`
  RoomTitle = styled.h3`
     width: 80%;
     font-size:16px;
-    font-family: sans-serif;
     white-space:nowrap;
     text-overflow:ellipsis;
     overflow:hidden;

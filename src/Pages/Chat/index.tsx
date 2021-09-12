@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css';
 
-import { Room } from '../../Components/Rooms/RoomComponent'
+import { Room } from '../../Components/Rooms'
 
 import Header from '../../Components/header';
 import { User } from '../../Components/Users/UserComponent';
 
-import { Message } from '../../Components/Messages/Messages';
+import { Message } from '../../Components/Messages';
 
 function Chat() {
   let dia = new Date().toISOString();
@@ -65,7 +65,7 @@ function Chat() {
     date:dia,
     author:{ 
       id: '4',
-      username: 'teste'
+      username: 'RodCordeiro'
     },
     text: "teste",
     room: "Teste",
@@ -117,6 +117,41 @@ function Chat() {
           author={message.author}
           room={message.room}
           isAuthor={false}
+        />
+        <Message
+          date={message.date}
+          text={message.text}
+          author={message.author}
+          room={message.room}
+          isAuthor={true}
+        />
+        <Message
+          date={message.date}
+          text={message.text}
+          author={message.author}
+          room={message.room}
+          isAuthor={false}
+        />
+        <Message
+          date={message.date}
+          text={message.text}
+          author={message.author}
+          room={message.room}
+          isAuthor={true}
+        />
+        <Message
+          date={message.date}
+          text={message.text}
+          author={message.author}
+          room={message.room}
+          isAuthor={false}
+        />
+        <Message
+          date={message.date}
+          text={message.text}
+          author={message.author}
+          room={message.room}
+          isAuthor={true}
         />
         <Message
           date={message.date}

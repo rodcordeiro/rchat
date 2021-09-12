@@ -16,9 +16,8 @@
 }
 .header p{
     font-size: 2em;
-    font-family: sans-serif;
     font-weight: 400;
-    color: white;
+    color: var(--header-text-color);
 }
 header #APP{
     position: absolute;
